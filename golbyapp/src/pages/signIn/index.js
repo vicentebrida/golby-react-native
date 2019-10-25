@@ -14,8 +14,6 @@ import {
   ErrorMessage,
   Button,
   ButtonText,
-  SignUpLink,
-  SignUpLinkText,
 } from './styles';
 
 
@@ -52,7 +50,7 @@ export default class SignIn extends Component {
         } else {
             try {
 
-                await api.post('/users/login', {
+                await api.post('api/users/login', {
                     email: this.state.email,
                     password: this.state.password,
                 }).then(function(response){
@@ -100,9 +98,6 @@ export default class SignIn extends Component {
             <Button onPress={this.handleSignInPress}>
             <ButtonText>Entrar</ButtonText>
             </Button>
-            <SignUpLink onPress={this.handleCreateAccountPress}>
-            <SignUpLinkText>Criar conta grátis</SignUpLinkText>
-            </SignUpLink>
         </Container>
         );
     }

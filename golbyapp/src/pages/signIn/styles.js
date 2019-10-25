@@ -4,7 +4,7 @@ const Container = styled.View`
   flex: 1;
   alignItems: center;
   justifyContent: center;
-  backgroundColor: #F5F5F5;
+  backgroundColor: #000000;
 `;
 
 const Logo = styled.Image`
@@ -34,7 +34,7 @@ const ErrorMessage = styled.Text`
 const Button = styled.TouchableHighlight`
   padding: 20px;
   borderRadius: 5px;
-  backgroundColor: #FC6663;
+  backgroundColor: #73879C;
   alignSelf: stretch;
   margin: 15px;
   marginHorizontal: 20px;
@@ -47,16 +47,4 @@ const ButtonText = styled.Text`
   textAlign: center;
 `;
 
-const SignUpLink = styled.TouchableHighlight`
-  padding: 10px;
-  marginTop: 20px;
-`;
-
-const SignUpLinkText = styled.Text`
-  color: #999;
-  fontWeight: bold;
-  fontSize: 16px;
-  textAlign: center;
-`;
-
-export { Container, Logo, Input, ErrorMessage, Button, ButtonText, SignUpLink, SignUpLinkText };
+export { Container, Logo, Input, ErrorMessage, Button, ButtonText };

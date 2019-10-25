@@ -6,9 +6,10 @@ import SignUp from './pages/signUp';
 import Main from './pages/main';
 
 const Routes = createStackNavigator({
+  Main,
   SignIn,
   SignUp,
-  Main,
+  
 });
 
 const AppRoutes = createAppContainer(Routes);

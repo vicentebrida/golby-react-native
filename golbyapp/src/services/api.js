@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 ** Simulador IOS:           http://localhost:3333/
 */
 const api = axios.create({
-  baseURL: 'http://57fd4c7b.ngrok.io/intranetpm/api/',
+  baseURL: 'http://e6c2791f.ngrok.io/intranetpm/',
 });
 
 api.interceptors.request.use(async (config) => {
